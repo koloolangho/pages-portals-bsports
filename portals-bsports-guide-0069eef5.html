@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常中，一个可对照的参考 · B体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f5f2ed;
+            color: #1f1e1b;
+            line-height: 1.7;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: #1f2b34;
+            background-image: radial-gradient(ellipse at 30% 50%, #2c3d4b 0%, #1a232c 90%);
+            padding: 4.5rem 2rem 3.5rem;
+            text-align: center;
+            border-bottom: 1px solid #dfd8cf;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 350;
+            letter-spacing: 0.02em;
+            color: #e8e1d6;
+            margin-bottom: 0.75rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #c5bcb0;
+            max-width: 640px;
+            margin: 0 auto;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2.5rem 1.8rem 4rem;
+            flex: 1;
+        }
+
+        .intro {
+            margin-bottom: 2.2rem;
+        }
+        .intro p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2b2a27;
+        }
+
+        .section-block {
+            margin-top: 2.8rem;
+        }
+        .section-block h2 {
+            font-size: 1.35rem;
+            font-weight: 450;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid #d7cdbf;
+            color: #1a231f;
+            letter-spacing: 0.01em;
+        }
+        .section-block p, .section-block li {
+            font-size: 0.98rem;
+            color: #2f2d29;
+            margin-bottom: 0.8rem;
+        }
+        .section-block ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0 1.5rem;
+        }
+        .section-block li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .section-block li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b6a088;
+            font-weight: 300;
+        }
+
+        .pull-quote {
+            background: #f0ebe4;
+            border-left: 4px solid #b59b82;
+            padding: 1.3rem 1.8rem;
+            margin: 2.2rem 0;
+            font-size: 1rem;
+            font-style: normal;
+            color: #2f2b24;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .pull-quote strong {
+            font-weight: 550;
+            color: #1f2b34;
+        }
+
+        .faq-mini {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dbd3c8;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            border-bottom: 1px dashed #d3cabb;
+            padding-bottom: 0.6rem;
+        }
+        .faq-mini summary {
+            font-weight: 450;
+            color: #2a312b;
+            cursor: pointer;
+            padding: 0.3rem 0;
+            font-size: 0.98rem;
+        }
+        .faq-mini summary::-webkit-details-marker {
+            color: #9f8b76;
+        }
+        .faq-mini details p {
+            margin: 0.5rem 0 0.2rem 0.8rem;
+            font-size: 0.92rem;
+            color: #3f3b34;
+            padding-right: 0.5rem;
+        }
+
+        a {
+            color: #7f6b56;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.15s, color 0.15s;
+        }
+        a:hover {
+            color: #4f3f2f;
+            border-bottom: 1px solid #7f6b56;
+        }
+        a:focus-visible {
+            outline: 2px solid #b59b82;
+            outline-offset: 2px;
+        }
+
+        .visit-line {
+            margin-top: 3rem;
+            padding: 1.2rem 0 0.2rem;
+            font-size: 0.95rem;
+            color: #3f3a34;
+            border-top: 1px solid #ddd5ca;
+            text-align: left;
+        }
+        .visit-line p {
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem 1.8rem;
+            font-size: 0.8rem;
+            color: #8b8175;
+            border-top: 1px solid #e0d8ce;
+            background: #f9f6f2;
+        }
+
+        @media (max-width: 540px) {
+            .hero { padding: 3rem 1.2rem 2.5rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .container { padding: 1.8rem 1rem 3rem; }
+            .pull-quote { padding: 1rem 1.2rem; margin: 1.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>对照与延伸 · 日常笔记</h1>
+        <p>从一次查询开始，渐渐变成随手翻看的参考页。不是什么导航，更像一本停留在手边的摘录。</p>
+    </header>
+
+    <main class="container">
+        <div class="intro">
+            <p>最初只是想确认某个体育数据的来源。浏览器里开了七八个标签页，翻过几篇报道、几份统计，最后停在一个经常更新的信息页——<a href="https://portals-bsports.com">B体育</a>。没有刻意收藏，后来每次需要对照什么，都会先打开它看一眼。</p>
+            <p>时间久了，这个页面就成了某种起点。不是因为它收录得多，而是因为它排布得清楚，像一块干净的白板，上面写的都是可以直接用来比较的数字和事实。对于只想快速核对、不想反复跳转的人来说，这种克制反而省力。</p>
+        </div>
+
+        <div class="section-block">
+            <h2>日常查询，不需要太多层级</h2>
+            <p>很多时候我们打开一个页面，是为了找一个具体答案：某场比赛的比分、某支队伍的近期走势、某位选手的参赛记录。理想的情况是，页面直接把数据摊开，而不是先让用户进行一次“猜谜”式的导航。</p>
+            <p>我习惯把 <a href="https://portals-bsports.com">B体育</a> 放在浏览器书签栏的固定位置。它没有用复杂的分类或花哨的动效，但核心信息总是在第一屏就能找到。对于日常使用而言，这比任何炫技都实用。</p>
+        </div>
+
+        <div class="section-block">
+            <h2>可对照，才是参考的意义</h2>
+            <p>单独看一个数字是没有价值的。只有当它被放在另一个数字旁边，差异才浮现出来。体育数据的乐趣也在于此——胜负、分差、命中率、累积场次……没有对照，就只是孤立的记录。</p>
+            <ul>
+                <li>查完主队数据，顺手扫一眼客队近五场的起伏</li>
+                <li>看完联赛排名，再拉下来看分区统计</li>
+                <li>对比不同赛季的同期数据，趋势往往比单场更说明问题</li>
+            </ul>
+            <p>一个页面如果能在同一视图里提供多组对照信息，就省去了来回切换的麻烦。<a href="https://portals-bsports.com">B体育</a> 在这方面做得比较自然，没有强行拼凑，而是让数据本身引导阅读顺序。</p>
+        </div>
+
+        <div class="pull-quote">
+            <strong>引用提示</strong> —— “数据不负责解释，只负责呈现。一个好的参考页面，应该让读者自己完成对比，而不是替读者下结论。”
+        </div>
+
+        <div class="section-block">
+            <h2>延伸阅读：从点到面的习惯</h2>
+            <p>有时候，一次查询会引出新的问题。比如看到某支队伍的客场胜率，会想知道它最近十场的得失分分布；或者关注某位新人之后，想回头看看他此前的青年联赛数据。这种延伸不是计划好的，它更像一种沿着页面结构自然生长的路径。</p>
+            <p>我慢慢觉得，一个好的信息聚合页，不需要把所有内容都塞进首页。它只需要在关键位置留出“再走一步”的线索——一个链接、一个相关条目、一个可展开的旧赛季统计。剩下的，由读者的好奇心完成。</p>
+        </div>
+
+        <div class="faq-mini">
+            <h2 style="border-bottom: none; font-size:1.15rem; margin-bottom:0.6rem;">快速摘要</h2>
+            <details>
+                <summary>这个页面主要提供什么？</summary>
+                <p>一个聚焦体育数据与赛况的聚合参考页，风格简洁，侧重信息可读性与对照便利性。你可以把它当作日常快速查阅的中转站。</p>
+            </details>
+            <details>
+                <summary>内容更新频率如何？</summary>
+                <p>保持与主要赛事同步更新，关键联赛、杯赛的数据通常会在比赛结束后的较短时间内反映在页面上。具体以实际显示为准。</p>
+            </details>
+            <details>
+                <summary>适合什么样的人使用？</summary>
+                <p>适合日常有体育数据查询习惯、希望在一个页面内完成信息对照的读者。不追求冗长分析，只求数据清晰、结构稳定。</p>
+            </details>
+        </div>
+
+        <div class="visit-line">
+            <p>如果你也想在浏览器里留一个随时可对照的参考页，可以浏览 <a href="https://portals-bsports.com">B体育</a>，看看它的组织结构是否符合你的日常习惯。</p>
+            <p>有时一个好的参考页，比搜索引擎的临时结果更可靠，因为它始终保持着一致的布局和稳定的数据更新节奏。</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>日常笔记 · 仅作信息对照与延伸阅读参考</p>
+    </footer>
+</body>
+</html>
